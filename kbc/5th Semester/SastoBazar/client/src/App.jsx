@@ -1,54 +1,16 @@
-import React from "react"; 
-import './App.css'
-
-// import styles from './App.css';
+import React from "react";
+import "./App.css";
+import My, { Foot } from "./components/header/MyHeader";
+import Footer from "./components/footer/Footer";
 
 function App() {
-
-//Internal styling 1.
-  // const styling = {
-  //   color:"green",
-  //   font:"4rem",
-  // };
-
-
-  // return [
-  //    <h1>Hello World</h1>,
-  //   <span>This is my new Paragraph</span>
-  // ]
-  
-  // return <div>
-  //       <h1>Hello World</h1>
-  //      <span>This is my new Paragraph</span>
-  // </div>
-  
-  // return <React.Fragment>
-  //       <h1>Hello World</h1>
-  //      <span>This is my new Paragraph</span>
-  // </React.Fragment>
-
-  // also known as synthetic sugar 
-  // return <>
-  //       <h1>Hello World</h1>
-  //      <span>This is my new Paragraph</span>
-  // </>
-
-  // //styling
-  // //1. Inline Css
-  // return <>
-  //   <h1 style={styling}>Hello World</h1>
-  // </>
-
-  // 2. className
   return (
-    <>
-    <h1 className="text-red-500">Hello World</h1>
-    </>
-  )
-
-
-  // return   React.createElement("h1", null, "Hello World");
-  
+    <div>
+    <My />
+    <Footer />
+    <Foot></Foot>
+    </div>
+  );
 }
 
-export default App
+export default App;
