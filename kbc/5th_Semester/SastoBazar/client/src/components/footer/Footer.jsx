@@ -1,4 +1,6 @@
 import React from "react";
+// import PlayStore from "../../assets/images/playstore.png"
+// import AppStore from "../../assets/images/appstore.png"
 
 const Footer = () => {
   return (
@@ -41,7 +43,6 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
       </footer>
