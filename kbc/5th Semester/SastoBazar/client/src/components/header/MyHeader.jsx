@@ -46,13 +46,3 @@ const MyHeader = () => {
 
 
 export default MyHeader;
-
-
-
-export const Foot= ()=>{
-    return(
-        <>
-        <h1>ia am nee fooort</h1>
-        </>
-    )
-}

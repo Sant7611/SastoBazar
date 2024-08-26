@@ -1,14 +1,13 @@
 import React from "react";
 import "./App.css";
-import My, { Foot } from "./components/header/MyHeader";
+import Header from "./components/header/MyHeader";
 import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <div>
-    <My />
+    <Header />
     <Footer />
-    <Foot></Foot>
     </div>
   );
 }
