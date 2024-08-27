@@ -19,3 +19,19 @@ functional component:-
     (no builtin state and lifecycle)
     lightweight
     introduction to hooks. (can use state and lifecycle method)
+
+
+
+Routing in ReactJS
+-Single Page Applicatin (SPA)
+
+react-router-dom provides us three components:
+    <BrowserRouter>
+        it gets, changes and loads url in browser.
+    <Routes>
+        this is the collection of routes for different pages. it wraps all the routes in this single component.
+    <Route>
+        it takes two props, i.e path and element. what name to provide to the element in the browser and what to load in the browser.
+
+!NavLink and Link
+    NavLink provides the current navigation.
