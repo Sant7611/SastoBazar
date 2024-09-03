@@ -35,3 +35,37 @@ react-router-dom provides us three components:
 
 !NavLink and Link
     NavLink provides the current navigation.
+
+
+Lifecycle methods
+    -in three stages
+        1. Mount
+        2. Update 
+        3. Unmount
+    
+    useEffect method in React can handle all 3 stages. this method is used when we require some effect. This is the alternative of lifecycle method. This is a high order function. 
+    
+    Syntax
+
+    useEffect(() => {
+    first
+  
+    return () => {
+      second
+    }
+  }, [third])
+  
+
+Cross Origin Resource Sharing(CORS): it is the process of communicating between server and frontend of different ports. so there is a concept of cors. This is performed through backend. The frontend (browser ) should be given access by backend. for eg. frontend is react and backend may be django, asp, php etc. thus, communication between react and other backend is required. thus cors helps in communicating this process. 
+
+const corsOptions = {
+    origin: "https://localhost:3000",
+    credentials: true,
+    optionsSuccessStatus: 201,
+};
+
+
+Controlled Component: 
+    if a input is controlled using state it is called controlled component
+
+    this can be used when the input fields are less. but if there are more then it's gonna be very hard as multiple states has to be defined. thus, another concept was defined. 

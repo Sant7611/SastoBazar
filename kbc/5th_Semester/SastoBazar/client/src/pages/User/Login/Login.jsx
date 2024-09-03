@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 export const Login = () => {
+  
+  const []
+
   return (
     <>
-      <div className="flex justify-center mx-auto w-1/2">
+      <div className="rounded-md bg-gray-100 p-4 mx-auto w-1/4">
+      <h2 className="font-medium" >Login</h2>
         <span className="text-base">Please enter your credentials</span>
         <form className="my-3 ">
           <div className="mb-4">
@@ -19,6 +23,8 @@ export const Login = () => {
               type="text"
               id="email"
               name="email"
+              value={email}
+              onChange={(e)=>setEmail(e.target.value)}
               className="mt-1 px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none"
             />
           </div>
@@ -28,26 +34,27 @@ export const Login = () => {
               htmlFor="password"
               className="block text-sm font-medium text-gray-700"
             >
-              Email
+              Password
             </label>
             <input
-              type="text"
+              type="password"
               id="password"
               name="password"
               placeholder="Password"
-              className="mt-1 px-4 py-3 border border-gray-300 rounded-md w-full outline-none"
+              value={password}
+              onChange={(e)=>setPassword(e.target.value)}
+              className="mt-1 px-4 py-2 border border-gray-300 rounded-md w-full outline-none"
             />
           </div>
 
           <div className="mt-4">
             <button
               type="submit"
-              className="py-3 px-4 w-full bg-indigo-600 text-white rounded-md hover:bg-indigo-700  outline-none"
-            >
+              className="py-3 mb-2 px-4 w-full bg-purple-600 text-white rounded-md hover:bg-purple-700  outline-none">
               Login
             </button>
           </div>
-          <span>Don't have an account?  <NavLink to="/sastobazar-register" className="text-decoration-none" > register</NavLink></span>
+          <span>Don't have an account?  <NavLink to="/sastobazar-register" className="text-decoration-none text-purple-600 hover:text-purple-700" > Register</NavLink></span>
         </form>
       </div>
     </>
